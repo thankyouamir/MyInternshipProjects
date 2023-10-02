@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <meta charset="UTF-8">
+    <div class="site-title" id="site-title"></div>
+    <script src="../javascript/function.js"></script>
+    
+    <script>
+        window.addEventListener('load', getRandQuote());
+        window.addEventListener('load', fillTextToDiv('about-me', 'info-txt'));
+    </script>
+     
+    <title>Landing Page</title>
+</head>
+
+<body>
+    <div class="landing-page">
+        <div class="menu-header">
+            <button class="hamburger">
+                <div class="bar"></div>
+            </button>
+            <nav class="mobile-nav">
+               
+                <a href="../html/home.html">
+                    <h1 id="home-nav-btn">Home</h1>
+                </a>
+                <a href="../html/resume.html">
+                    <h1 id="home-nav-btn">Resume</h1>
+                </a>
+                <a href="../html/portfolio.html">
+                    <h1 id="home-nav-btn">Portfolio</h1>
+
+                </a>
+                
+                <a href="../html/contact.html">
+                    <h1 id="home-nav-btn">Contact</h1>
+                </a>
+                <a href="../html/about.html">
+                    <h1 id="home-nav-btn">About</h1>
+                </a>
+            </nav>
+            <div class="menu-box">
+                <div class="menu" id="nav-menu">
+                    <div class="btn" id="home-btn">
+                        
+                        <a id="home" href="../html/home.html">
+                            <button class="home-btn">
+                                Home
+                            </button>
+                        </a>
+                    </div>
+                    <div class="btn" id="resume-btn">
+                        <a href="../html/resume.html">
+                            <button class="resume-btn">
+                                Resume
+                            </button>
+                        </a>
+                    </div>
+                    <div class="btn" id="portfolio-btn">
+                        <a href="../html/portfolio.html">
+                            <button class="portfolio-btn">
+                                Portfolio
+                            </button>
+                        </a>
+                    </div>
+                   
+                    <div class="btn" id="contact-btn">
+                        <a href="../html/contact.html">
+                            <button class="contact-btn">
+                                Contact
+                            </button>
+                        </a>
+                    </div>
+                    <div class="btn" id="about-btn">
+                        <a href="../html/about.html">
+                            <button class="about-btn">
+                                About
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="base-box" id="profile">
+            <div class="profile-picture">
+                <img class="profile-pic" src="../images/profile_icon.png">
+            </div>
+            <div class="txt" id="name">
+                Amir Khan
+            </div>
+            <div class="txt" id="occupancy">
+                Full-Time Student
+            </div>
+            <hr>
+            <div class="links">
+                <div class="email">
+                    
+                        <button class="link-btn">
+                            <img class="email-logo" src="../images/mail-icon.png" onclick="showGmail()">
+                        </button>
+                        <script>
+                            function showGmail() {
+                                var gmail = "amirkhannamkhana@gmail.com"; 
+                                alert("Gmail: " + gmail);
+                            }
+                        </script>
+                    
+                </div>
+
+                <div class="phone">
+                    
+                        <button class="link-btn">
+                            <img class="phone-logo" src="../images/phone-icon.png" onclick="showContactNumber()"/>
+                           
+                        </button>
+                        <script>
+                            function showContactNumber() {
+                                var contactNumber = "+919733487726"; 
+                                alert("Contact Number: " + contactNumber);
+                            }
+                        </script>
+                    
+                </div>
+
+                <div class="github">
+                    <a href="https://github.com/thankyouamir" target="_blank">
+                        <button class="link-btn">
+                            <img class="github-logo" src="../images/github-icon.png">
+                        </button>
+                    </a>
+                </div>
+
+                <div class="linkedin">
+                    <a href="https://www.linkedin.com/in/thankyouamir" target="_blank">
+                        <button class="link-btn">
+                            <img class="linkedin-logo" src="../images/linkedin-round-icon.png">
+                        </button>
+                    </a>
+                </div>
+
+                
+            </div>
+        </div>
+        
+
+        <div class="quote-box">
+            <div class="base-box">
+                <div class="txt" id="quote">
+                    <div id="generated-quote">
+                    </div>
+                    <div id="author">
+                    </div>
+                    <div class="btn" id="quote-btn">
+                        <button class="get-quote" onclick="getRandQuote()">
+                            New Quote
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <br>
+                Created by Amir Khan. Made with JS, HTML and CSS
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

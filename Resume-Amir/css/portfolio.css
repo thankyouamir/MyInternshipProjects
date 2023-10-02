@@ -1,0 +1,23 @@
+.projects {
+    width: 500px;
+    align-items: center;
+    display: block;
+    border: solid;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 5px 6px 6px #00c6ff;
+}
+
+#projects-box {
+    align-items: center;
+}
+
+.not-present {
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 650px) {
+    .projects {
+        width: 300px;
+    }
+}

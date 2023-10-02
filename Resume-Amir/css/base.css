@@ -1,0 +1,208 @@
+body {
+    background: #00c6ff;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #0072ff, #00c6ff);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #0072ff, #00c6ff);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    scroll-behavior: smooth;
+}
+
+.btn button {
+    width: 150px; /* Adjust the width as needed */
+    height: 60px; 
+    font-size: large;
+    margin: 10px;
+    padding-inline-start: 50px;
+    padding-inline-end: 50px; /* Adjust the right margin to create space between buttons */
+    background-image: linear-gradient(to left, #0072ff, #00c6ff);
+    background-size: 500% 400%;
+    color: #fff; /* Set text color to contrast with the background */
+    border-radius: 5px;
+    transition: all .2s ease-in-out;
+    border: none;
+    cursor: pointer;
+}
+
+.base-box {
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    border: 10px solid white;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    animation: loadInTransition 1.5s ease;
+}
+
+#home-btn,
+
+#portfolio-btn,
+#contact-btn,
+#about-btn,
+#resume-btn {
+    float: left;
+    
+    
+}
+
+.btn a {
+    text-decoration: none;
+}
+
+.btn button:hover {
+    background-position: 75% 50%;
+    color: white;
+    transform: perspective(100px);
+    transform: scale(1.1);
+}
+
+.btn button:active {
+    transform: scale(0.9);
+    transition: 0.1s;
+}
+
+.menu-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 10px;
+    width: 90%;
+    height: 75px;
+    background-color: white;
+    animation: loadInTransition 1.5s ease;
+    margin: 0 auto;
+}
+
+.menu button {
+    width: 50px;
+    height: 30px;
+    font-size: large;
+    align-items:center;
+    justify-content:center;
+    display: flex;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+@keyframes loadInTransition {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .menu button {
+        height: 30px;
+        width: 70px;
+        font-size: 10px;
+        margin-top: 10px;
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .menu-box {
+        display: none;
+    }
+
+    .menu button {
+        height: 20px;
+        width: 60px;
+        font-size: 10px;
+        margin-top: 10px;
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+        position: 6px;
+        width: 60px;
+        cursor: pointer;
+        appearance: none;
+        background: none;
+        outline: none;
+        border: none;
+        margin-left: 87%;
+    }
+
+    .hamburger .bar,
+    .hamburger:after,
+    .hamburger:before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 5px;
+        background-color: #FFF;
+        margin: 6px 0px;
+        transition: 0.4s;
+    }
+
+    .hamburger.is-active:before {
+        transform: rotate(-45deg) translate(-7px, 8px);
+        position: relative;
+
+        z-index: 100;
+    }
+
+    .hamburger.is-active .bar {
+        opacity: 0;
+    }
+
+    .hamburger.is-active:after {
+        transform: rotate(45deg) translate(-8px, -8px);
+        position: relative;
+        z-index: 100;
+    }
+
+    .mobile-nav {
+        position: fixed;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        min-height: 100vh;
+        display: block;
+        z-index: 98;
+        background-color: #0072ff;
+        padding-top: 120px;
+        transition: 0.3s;
+    }
+
+    .mobile-nav.is-active {
+        left: 60%;
+    }
+
+    .mobile-nav a {
+        display: block;
+        text-align: center;
+        width: 100%;
+        height: 65px;
+        max-width: 210px;
+        margin: 40px 15px;
+        padding: 12px 16px;
+        background-color: #0054ff;
+        color: white;
+        text-decoration: none;
+    }
+
+    .mobile-nav a:hover {
+        background-color: #0060ff;
+    }
+
+
+}

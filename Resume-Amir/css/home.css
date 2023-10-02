@@ -1,0 +1,182 @@
+#name,
+#occupancy,
+#quote {
+    font-size: 150%;
+    width: 500px;
+    align-self: center;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links div {
+    margin: 10px;
+}
+
+.profile-pic {
+    margin: 10px;
+    border-radius: 100%;
+    width: 300px;
+    transition: 0.3s all;
+}
+
+.link-btn {
+    appearance: none;
+    cursor: pointer;
+    height: 45px;
+    width: 80px;
+    border: 0px solid;
+    background-image: linear-gradient(to left, #0072ff, #00c6ff);
+    background-size: 500% 400%;
+    border-radius: 50px;
+    transition: 0.3s all;
+    align-items: center;
+    display: flex;
+}
+
+.link-btn img {
+    display: block;
+    margin: 0 auto;
+}
+
+.link-btn:hover {
+    background-position: 75% 50%;
+    transform: perspective(100px);
+    transform: scale(1.1);
+}
+
+.link-btn:active {
+    transform: scale(0.9);
+    transition: 0.1s;
+}
+
+.twitter {
+    display: inline-block;
+    vertical-align: middle;
+    align-content: center;
+}
+
+.twitter-logo {
+    float: left;
+    width: 55%;
+}
+
+.github-logo {
+    float: left;
+    width: 55%;
+}
+
+.linkedin-logo {
+    float: left;
+    width: 55%;
+    margin-top: 1px;
+}
+
+.phone-logo {
+    float: left;
+    width: 45%;
+    margin-top: 3px;
+}
+
+.email-logo {
+    float: left;
+    width: 55%;
+    margin-top: 4px;
+}
+
+.under-pfp-txt {
+    font-size: larger;
+}
+
+#generated-quote {
+    font-size: large;
+}
+
+#author {
+    font-size: medium;
+}
+
+#quote-btn {
+    margin-top: 2%;
+}
+
+.get-quote {
+    width: 100px;
+    height: 60px;
+    font-size: medium;
+    margin-top: 10%;
+}
+
+#info-txt {
+    width: 500px;
+    align-self: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+.footer {
+    font-size: large;
+    display: flex;
+    justify-content: center;
+}
+
+@media(max-width: 725px) {
+
+    #profile {
+        margin-top: 100px;
+    }
+
+    .link-btn {
+        width: 50px;
+    }
+
+    .profile-pic {
+        width: 150px;
+    }
+
+    #slide-btn button {
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+
+    .footer {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .link-btn {
+        width: 50px;
+    }
+
+    .links div {
+        margin: 3px;
+    }
+
+
+    .profile-pic {
+        width: 150px;
+    }
+
+    #slide-btn button {
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+}

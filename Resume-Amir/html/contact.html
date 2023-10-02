@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <meta charset="UTF-8">
+    <script src="../javascript/function.js"></script>
+    <title>Contact</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="menu-header">
+            <button class="hamburger">
+                <div class="bar"></div>
+            </button>
+            <nav class="mobile-nav">
+                <a href="../html/home.html">
+                    <h1 id="home-nav-btn">Home</h1>
+                </a>
+                <a href="../html/resume.html">
+                    <h1 id="home-nav-btn">Resume</h1>
+                </a>
+                <a href="../html/portfolio.html">
+                    <h1 id="home-nav-btn">Portfolio</h1>
+
+                </a>
+                
+                <a href="../html/contact.html">
+                    <h1 id="home-nav-btn">Contact</h1>
+                </a>
+                <a href="../html/about.html">
+                    <h1 id="home-nav-btn">About</h1>
+                </a>
+            </nav>
+            <div class="menu-box">
+                <div class="menu" id="nav-menu">
+                    <div class="btn" id="home-btn">
+                        <a id="home" href="../html/home.html">
+                            <button class="home-btn">
+                                Home
+                            </button>
+                        </a>
+                    </div>
+                    <div class="btn" id="resume-btn">
+                        <a href="../html/resume.html">
+                            <button class="resume-btn">
+                                Resume
+                            </button>
+                        </a>
+                    </div>
+                    <div class="btn" id="portfolio-btn">
+                        <a href="../html/portfolio.html">
+                            <button class="portfolio-btn">
+                                Portfolio
+                            </button>
+                        </a>
+                    </div>
+                   
+                    
+                    <div class="btn" id="contact-btn">
+                        <a href="../html/contact.html">
+                            <button class="contact-btn">
+                                Contact
+                            </button>
+                        </a>
+                    </div>
+                    <div class="btn" id="about-btn">
+                        <a href="../html/about.html">
+                            <button class="about-btn">
+                                About
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact-container">
+        <div class="base-box">
+            <h2>Contact Me!</h2>
+            <div id="status"></div>
+            <form action="https://formspree.io/f/mknlnoje" method="POST" id="my-form">
+                <label>
+                    <input class="input" type="text" name="name" placeholder="Name" required>
+                </label>
+                <label>
+                    <input class="input" type="text" name="email" placeholder="Email" required>
+                </label>
+                <label>
+                    <input class="input" type="text" name="name" placeholder="Phone Number" required>
+                </label>
+                <label>
+                    <textarea class="input" name="message" placeholder="Message"></textarea>
+                </label>
+                <button type="submit" id="submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
